@@ -5,7 +5,7 @@ from firebase_admin import firestore
 
 # 引用私密金鑰
 # path/to/serviceAccount.json 請用自己存放的路徑
-cred = credentials.Certificate('journey-test.json') 
+cred = credentials.Certificate('FirebaseAdminSDK.json') 
 
 # 初始化firebase，注意不能重複初始化
 firebase_admin.initialize_app(cred)
@@ -22,7 +22,7 @@ for doc in all_user_ids:
     
 print(ID)
 
-#刪掉一個colname 用'指定要刪掉的col':firestore.DELETE_FIELD
+#刪掉一個colname 用 '指定要刪掉的col':firestore.DELETE_FIELD
 for key in ID:
   path = "Attraction/"+key
   doc_ref = db.document(path)
