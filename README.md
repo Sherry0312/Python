@@ -12,3 +12,9 @@ Make a nest in a column
 * deleteColumn.py
 
 Delete a column already in the Firebase.
+
+### Use open data to show Youbike information
+
+* Youbike.py
+
+I use Taoyuan government's open data to make a web. It can show the real-time information about Taoyun's Youbike and provide the station deatails to user.
